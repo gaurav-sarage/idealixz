@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import TypewriterTitle from "@/components/ui/TypewriterTitle";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,6 +11,19 @@ export default function Home() {
             Note Taking
           </span>Assistant
         </h1>
+        <div className="mt-4"></div>
+        <h2 className="font-semibold text-3xl text-center text-slate-700">
+          <TypewriterTitle />
+        </h2>
+        <div className="mt-8"></div>
+        
+        <div className="flex justify-center">
+          <Link href="/dashboard">
+            <Button className="bg-green-600">
+              Get Started
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   )
