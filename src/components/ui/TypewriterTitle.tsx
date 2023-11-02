@@ -22,7 +22,7 @@ const TypewriterTitle = (props: Props) => {
                 .start();
             }}
         />
-    )
-}
+    );
+};
 
 export default TypewriterTitle
