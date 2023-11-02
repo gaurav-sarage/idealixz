@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { ArrowLeft } from "lucide-react";
 import { UserButton } from '@clerk/nextjs';
+import { Separator } from '@/components/ui/separator';
 
 interface Props {};
 
@@ -30,10 +31,14 @@ const DashboardPage = (props: Props) => {
                     </div>
 
                     <div className='h-8'></div>
-                    
+                    <Separator />
+                    <div className='h-8'></div>
+                    {/* List all the notes & their respective info */}
+                    {/* TODO event rendered conditionally */}
 
-
-
+                    <div className='text-center'>
+                        <h2 className='text-xl text-gray-500'>You have no notes yet!!</h2>
+                    </div>
                 </div>
             </div>
         </>
