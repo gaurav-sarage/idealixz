@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import TypewriterTitle from "@/components/ui/TypewriterTitle";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -21,10 +22,11 @@ export default function Home() {
           <Link href="/dashboard">
             <Button className="bg-green-600">
               Get Started
+              <ArrowRight className="ml-2 w-5 h-5" strokeWidth={3}/>
             </Button>
           </Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
