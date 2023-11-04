@@ -11,7 +11,6 @@ type Props = {};
 const CreateNoteDialog = (props: Props) => {
     const [input, setInput] = React.useState("");
 
-
     return(
         <Dialog>
             <DialogTrigger>
